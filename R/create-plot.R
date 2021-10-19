@@ -16,7 +16,8 @@ df %>%
   filter(Location == city) %>%
   ggplot(aes(x = Temp9am, y = Humidity9am)) + 
   geom_point(color = 'red') + 
-  ggtitle('Scatter plot of Tempature v Humidity in Brisbane') + 
+  ggtitle('Scatter plot of Tempature v Humidity in Brisbane
+          Based on Wind Direction') + 
   theme_minimal() + 
   facet_wrap(~WindDir9am)
 
