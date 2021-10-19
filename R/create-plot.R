@@ -18,4 +18,5 @@ df %>%
   geom_point(color = 'red') + ggtitle('Scatter ploy of Tempature v Humidity in Brisbane')
 
 # Save the plot in graphics/
-ggsave(filename = "graphics/scatter-temp-humidity.png", plot = scatter_plot)
+ggsave(filename = "graphics/scatter-temp-humidity.png", plot = scatter_plot,
+       width = 1920, height = 1200, units = 'px')
